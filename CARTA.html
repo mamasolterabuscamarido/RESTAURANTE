@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PÁGINA WEB DE MARCOS Y GONZALO</title>
+    <style>
+        /* Estilo para ocultar las páginas inicialmente */
+        .page {
+            display: none;
+        }
+    </style>
+    <script>
+        // Función para mostrar la página seleccionada y ocultar las demás
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.style.display = 'none');
+            const page = document.getElementById(pageId);
+            page.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h3>MAMASOLTERABUSCAMARIDO</h3>
+    </header>
+    
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="https://www.chess.com/">reserva</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Cosa_nostra">Jefe</a></li>
+            <li><a href="http://google.es/maps/@28.6425256,77.2236918,3a,75y,70.27h,77.96t/data=!3m10!1e1!3m8!1sNETEZxXVYMh-FkM5Ko8cMg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D12.040955084601748%26panoid%3DNETEZxXVYMh-FkM5Ko8cMg%26yaw%3D70.27221665326718!7i13312!8i6656!9m2!1b1!2i49?hl=es&entry=ttu&g_ep=EgoyMDI1MDMzMS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D">ubicación</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Barra de navegación interna -->
+    <div class="navbar">
+        <button onclick="showPage('home')">HOME</button>
+        <button onclick="showPage('about')">CARTA</button>
+        <button onclick="showPage('services')">CONTÁCTANOS</button>
+        <button onclick="showPage('contact')">TORNEO DE PIPSAS</button>
+        <button onclick="showPage('blog')">RESEÑA</button>
+    </div>
+
+   
+
+    <!-- Página Carta -->
+    <div class="page" id="about">
+        <h1>Conoce nuestra carta hecha por indios nativos explotados en nuestras cocinas</h1>
+        
+        <!-- Sección Pollo -->
+        <div class="section">
+            <h3>Pollo</h3>
+            <h4>Con extra de plumas</h4>
+            <p>Crujientes dedos de pollo con uña y todo, acompañados de salsa de mipalo.</p>
+        </div>
+        
+        <!-- Sección Classic Delicious -->
+        <div class="section">
+            <h3>Classic Delicious</h3>
+            <h4>Clásica y deliciosa</h4>
+            <p>Carne de "tumadre" con salsa especial.</p>
+        </div>
+        
+        <!-- Sección Pipsa al carbón -->
+        <div class="section">
+            <h3>Pipsa al carbón</h3>
+            <h4>Ahora con Marihuana</h4>
+            <p>Pan con tomate, queso y cosas verdes.</p>
+        </div>
+
+        <!-- Tabla de platos -->
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Plato</th>
+                    <th>Precio</th>
+                    <th>Ciudad</th>
+                    <th>Valoración</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Pollo</td>
+                    <td>12,99</td>
+                    <td>Madrid</td>
+                    <td>🍕🍕🍕🍕</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Classic Delicious</td>
+                    <td>15,99</td>
+                    <td>Barcelona</td>
+                    <td>🍕🍕🍕🍕🍕</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Pipsa</td>
+                    <td>12</td>
+                    <td>Sevilla</td>
+                    <td>🍕🍕🍕🍕🍕🍕</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Video -->
+        <iframe src="https://drive.google.com/file/d/1rRl4yBO9vLJvoM73Sb134DKPeGj9uTwU/preview" width="300" height="250" allow="autoplay"></iframe>
+        
+        <!-- Imagen -->
+        <img src="https://lh6.googleusercontent.com/proxy/PQwCVdOZ7vNSSt0t-ox2aFbotZZhIOqSPiO1b6DyYI7ZWTh1f2uMPhkblQjmxjdfBnginnVRTYTTKLedMU8ZKpEQl-M389S8QT2ptHFBxgEhe7El_-1uubYVfOpvFw" alt="Descripción de la imagen" width="300" height="250">
+    </div>
